@@ -4,6 +4,7 @@ const twilio = require('twilio');
 const nodemailer = require('nodemailer');
 
 const twilioClient = new twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN);
+console.log(process.env.TWILIO_SID,process.env.TWILIO_AUTH_TOKEN);
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
